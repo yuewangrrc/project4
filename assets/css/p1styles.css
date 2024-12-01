@@ -508,4 +508,7 @@ fieldset#contactInfo {
 .instructor-container .instructor img{
 	height:12.5rem
 }
+.home-container img{
+	height:19rem;
+}
 }
