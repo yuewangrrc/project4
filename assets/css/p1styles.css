@@ -1,0 +1,530 @@
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: rgb(0,102,153);
+}
+
+body,html {
+	height:100%;
+	position:relative;
+	background-color: #ffffff;
+	font-family: interstate, HelveticaNeue, HelveticaNeue neue, Helvetica, Arial, sans-serif;
+}
+
+div#container {
+	/* width:1200px; */
+	background-color: #fff;
+	border-radius: 8px;
+	/* margin: 10px auto; */
+	/* height:100%; */
+	/* padding: 10px; */
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+}
+#header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right:30px;
+}
+header .img-container{
+	flex:1;
+	/* Illiminate the white space between image and banner */
+	margin-bottom: -4px;
+	/* width:100px; */
+	height:100px;
+}
+.small-logo{
+	display: none;
+}
+.menu-container{
+	flex:1;
+	text-align: right;
+	display:none;
+}
+header .img-container img{
+	/* width:200% */
+	/* width:100px; */
+	height:100px
+
+}
+#small-logo{
+	display: none;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+	right: -30px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #e9e9e9;
+}
+/* Banner style start */
+#container .banner-container{
+	/* Sub-title will hava a relative potion to banner-container */
+	/* position:relative; */
+	height:400px;
+	/* Background */
+	/* background-image: url(./assets/images/banner.jpg);
+	background-repeat: no-repeat; */
+	/* Image will cover the whole banner container */
+	/* background-size: cover; */
+}
+#container .banner-container .carousel {
+    position: relative;
+    /* max-width: 1200px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+#container .banner-container .carousel-images {
+    display: flex;
+    transition: transform 1s ease;
+	height: 400px; /* 固定高度，可以根据需要调整 */
+    overflow: hidden;
+}
+
+#container .banner-container .carousel-images img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover; /* 或者使用 contain */
+    display: none; /* Hide all images by default */
+}
+
+#container .banner-container .description {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+	position: absolute;
+	bottom:10px;
+	left:0;
+	right:0;
+	color:#fff;
+	font-weight:550;
+	text-shadow: 1px 1px 2px #180303;
+}
+#container .banner-container .carousel-images img.active {
+    display: block; /* Show the active image */
+}
+
+#container .banner-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#container .banner-container .prev {
+    left: 10px;
+}
+
+#container .banner-container .next {
+    right: 10px;
+}
+/* Font color */
+#container .banner-container .title, #container .banner-container .sub-title{
+	color: #fff;
+}
+/* Styleing title */
+#container .banner-container .title{
+	letter-spacing:3px;
+	font-size:42px;
+	padding: 20px;
+}
+/* Styleing sub-title */
+#container .banner-container .sub-title{
+	/* 20 px to the banner container */
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	/* italic font */
+	font-style: italic;
+	/* Space between letters */
+	letter-spacing:1px;
+	font-size:14px;
+	font-weight:550;
+}
+
+/* Nav style begin */
+#nav-container{
+	/* Make ul a flex box */
+	display: flex;
+	justify-content: center;
+	/* ul have a Gradient backgroung color. */
+	background-image: linear-gradient(to bottom, #3e32da, #202e7a);
+	/* padding: 10px 0; */
+}
+#nav-container li{
+	/* Remove dot before li */
+	list-style: none;
+	/* When hover, give a hand */
+	cursor: pointer;
+	/* left/right distance from border to content is 10px */
+	padding:0px 10px;
+	/* top/bottom distance from border to ul container */
+	margin: 5px 0;
+}
+#nav-container li a{
+	font-size:14px;
+	font-weight:550;
+	/* Remove the underscore */
+	text-decoration: none;
+	/* font color */
+	color: #fff;
+}
+#nav-container li:not(:last-child){
+	/* Give li a border-right, without the last li. */
+	border-right:1px solid #4f0213;
+}
+#nav-container li:hover, #nav-container li a:focus{
+	/* When put cursor on the li, it wull change it's background color, and the action will completed in 1s */
+	background-color: rgb(0,0,0,.3);
+	transition: 1s;
+}
+
+/* main content start */
+.content-container{
+	/* Make content-container a flex box, aside nav 1, and right content 3 */
+	/* display: flex; */
+}
+.content-left{
+	/* flex:1; */
+}
+.content-left ul{
+	/* distance from the bottom element */
+	margin-bottom:50px;
+}
+.content-left .aside-bottom{
+	color:#666;
+	font-size:12px;
+}
+.content-left .aside-bottom img{
+	/* place img to the right of text */
+	float: right;
+	width:100px;
+}
+.content-left ul li{
+	/* Dot inside*/
+	list-style-position: inside;
+	padding:5px;
+	/* gradient background */
+	background-image: linear-gradient(to bottom, #ffffff,#dad6e1, #aaacae);
+}
+.content-left ul li a{
+	font-size:12px;
+	font-weight:550;
+	color: #000;
+}
+/* Give li a hover and focus style */
+.content-left ul li:hover, .content-left ul li:hover a, .content-left ul li a:focus,.active{
+	color:#fff;
+	background:rgb(0,0,0,.3);
+}
+/* First li have no dot before it*/
+.content-left ul li:first-child{
+	list-style: none;
+}
+/* When li is clicked, give it a class active, remove the dot before it. */
+.content-left ul li.active::before{
+	content:'';
+}
+/*  */
+.content-right{
+	/* distance from content-left */
+	padding-left:20px;
+	/* flex:3 */
+}
+.content-right .content-nav{
+	/* content nav top/right/bottom/left distace */
+	margin:10px 0 20px 0;
+	font-size:12px;
+}
+.content-right .content-nav .connect-sign{
+	letter-spacing: -4px;
+	margin-right:10px;
+}
+.content-right .content-subtitle{
+	/*  top/bottom 15px */
+	margin:15px 0;
+}
+.content-right .article{
+	font-size:14px;
+	/* Give it more distance from top/bottom line */
+	line-height: 24px;
+}
+.content-right .article a{
+	font-weight: 550;
+}
+.content-right .article .article-top{
+	/* 15px from bottom element */
+	margin-bottom:15px;
+	font-size:18px;
+}
+.content-right .article .article-top p{
+	/* 15px from bottom element */
+	margin-bottom:15px;
+}
+.content-right .article-bottom{
+	/* Make a flex box for texts and image container */
+	display:flex;
+	font-size:16px;
+	align-items: center;
+
+}
+.content-right .article-bottom-left{
+	flex:7;
+	padding-top:10px;
+}
+.content-right .article-bottom-left a{
+	/* strech the imag to fit the box */
+	font-size:20px;
+}
+.content-right .article-bottom-right{
+	flex:6;
+	border:1px solid #ccc;
+	padding:5px;
+}
+.content-right .article-bottom-right img{
+	/* strech the imag to fit the box */
+	width:100%;
+}
+.content-right  .article-bottom-right .img-descrition{
+	font-size:16px;
+	color:#000;
+	line-height:16px;
+}
+.content-right .article-bottom-left{
+	/* Make a flex box for texts and ul */
+	display: flex;
+	flex-direction: column;
+}
+.content-right .article-bottom-left ul{
+	margin:15px;
+}
+.content-right .article-bottom-left ul li{
+	/* Remove the dot before */
+	list-style: none;
+	margin-bottom: 10px;
+}
+.content-right .article-bottom-left ul li a{
+	font-weight: 550;
+}
+.content-right .gallery img{
+	width:200px;
+	height:200px;
+	margin:10px;
+}
+/* footer style begin */
+footer{
+	/* element place in center of footer */
+	text-align: center;
+	font-size:12px;
+	/* 20px away from the content */
+	margin-top:20px;
+}
+footer .copyright{
+	margin-right:10px;
+}
+footer .address{
+	color:#666
+}
+button[type="submit"]{
+	/* Give a space between button and input */
+	cursor: pointer;
+}
+/* Contact Us Form */
+fieldset#contactInfo {
+	border-radius: 10px;
+	margin: 15px auto;
+	box-shadow: 2px 2px 4px #ccc, -2px -2px 4px #ccc;
+}
+
+.center {
+	text-align: center;
+}
+
+#contactInfo .left {
+	float: left;
+	width: 100%;
+}
+#contactInfo ul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#contactInfo h3 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#contactInfo .left ul li {
+	width: 90%;
+	/*background: #EEE;*/
+	/*border:1px solid black;*/
+	border-radius: 5px;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+
+#contactInfo .left label {
+	display: inline-block;
+	width: 100px;
+	margin-top: 2px;
+}
+
+#contactInfo .left input {
+	display: inline-block;
+	width: 50%;
+	height: 26px;
+	padding-left: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+#contactInfo .left select {
+	display: inline-block;
+	height: 30px;
+	padding-left: 5px;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 3px;
+	color: #333;
+}
+
+.error,.reqired-field {
+	color: red;
+}
+
+.contactError {
+	margin-left: 110px;
+	color: #D8000C; /* 确保文本颜色足够深 */
+    background-color: #ffffff; /* 确保背景颜色足够浅 */
+}
+/* Submit Button */
+
+#submit,
+#clear {
+	height: 36px;
+	color: #333;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+#submit {
+	margin-right: 15px;
+}
+
+#submit:hover,
+#clear:hover {
+	/*box-shadow: 2px 2px 2px #000;*/
+	cursor: pointer;
+}
+
+.instructor-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.instructor-container .instructor{
+	flex:1;
+	flex-direction: column;
+	text-align: center;
+}
+.instructor-container .instructor img{
+	height:300px
+}
+.home-container{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width: 715px) {
+#header .big-logo{
+	/* width:100px; */
+	display:none;
+}
+#nav-container{
+	display:none;
+}
+#header .small-logo{
+	/* width:100px; */
+	display:block;
+}
+.menu-container{
+	display:block;
+}
+.instructor-container{
+	flex-direction: column;
+}
+.instructor-container .instructor img{
+	height:200px
+}
+}
