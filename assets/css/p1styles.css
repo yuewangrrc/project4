@@ -338,6 +338,16 @@ header .img-container img{
 	/* 15px from bottom element */
 	margin-bottom:15px;
 }
+.content-right .article .article-top ul{
+	/* 15px from bottom element */
+	list-style-type: none;
+}
+.content-right .article .article-top .safty-tips{
+	/* 15px from bottom element */
+	margin-bottom:15px;
+	font-size:24px;
+	color:rgb(0,102,153)
+}
 .content-right .article-bottom{
 	/* Make a flex box for texts and image container */
 	display:flex;
@@ -398,6 +408,7 @@ footer{
 }
 footer .copyright{
 	margin-right:10px;
+	color:#666
 }
 footer .address{
 	color:#666
