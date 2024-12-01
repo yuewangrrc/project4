@@ -22,7 +22,10 @@ a{
 	text-decoration: none;
 	color: rgb(0,102,153);
 }
-
+a:hover, a:focus{
+	text-decoration: none;
+	color: rgb(33, 0, 153);
+}
 body,html {
 	height:100%;
 	position:relative;
