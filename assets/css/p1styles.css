@@ -26,42 +26,46 @@ a:hover, a:focus{
 	text-decoration: none;
 	color: rgb(33, 0, 153);
 }
+html{
+	font-size:16px;
+}
 body,html {
-	height:100%;
+	width: 100%;
 	position:relative;
 	background-color: #ffffff;
 	font-family: interstate, HelveticaNeue, HelveticaNeue neue, Helvetica, Arial, sans-serif;
 }
 
 div#container {
-	/* width:1200px; */
+	width: 100%;
+	/* width:112.5rem; */
 	background-color: #fff;
-	border-radius: 8px;
-	/* margin: 10px auto; */
+	border-radius: .5rem;
+	/* margin: 0.625rem auto; */
 	/* height:100%; */
-	/* padding: 10px; */
-	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	/* padding: 0.625rem; */
+	box-shadow: 0.06rem 0.06rem 0.12rem #a2a2a2, -0.06rem -0.06rem 0.12rem #a2a2a2;
 }
 .oper-link a{
-	font-size:12px;
+	font-size:0.75rem;
 }
 .oper-link a:not(:last-child)::after{
 	content:'|';
-	margin-left:5px;
+	margin-left:0.3rem;
 }
 
 #header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-right:30px;
+	padding-right:2rem;
 }
 header .img-container{
 	flex:1;
 	/* Illiminate the white space between image and banner */
-	margin-bottom: -4px;
-	/* width:100px; */
-	height:100px;
+	margin-bottom: -0.25rem;
+	/* width:6.25rem; */
+	height:6.25rem;
 }
 .small-logo{
 	display: none;
@@ -73,8 +77,8 @@ header .img-container{
 }
 header .img-container img{
 	/* width:200% */
-	/* width:100px; */
-	height:100px
+	/* width:6.25rem; */
+	height:6.25rem
 
 }
 #small-logo{
@@ -91,18 +95,18 @@ header .img-container img{
     background-color: #f9f9f9;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.625rem;
+    font-size: 1rem;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-	right: -30px;
+	right: -2rem;
     background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 12.5rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: left;
 }
@@ -110,7 +114,7 @@ header .img-container img{
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
 }
@@ -133,7 +137,7 @@ header .img-container img{
 #container .banner-container{
 	/* Sub-title will hava a relative potion to banner-container */
 	/* position:relative; */
-	height:400px;
+	height:25rem;
 	/* Background */
 	/* background-image: url(./assets/images/banner.jpg);
 	background-repeat: no-repeat; */
@@ -142,7 +146,6 @@ header .img-container img{
 }
 #container .banner-container .carousel {
     position: relative;
-    /* max-width: 1200px; */
     margin: auto;
     overflow: hidden;
 }
@@ -150,7 +153,7 @@ header .img-container img{
 #container .banner-container .carousel-images {
     display: flex;
     transition: transform 1s ease;
-	height: 400px; /* 固定高度，可以根据需要调整 */
+	height: 25rem; /* 固定高度，可以根据需要调整 */
     overflow: hidden;
 }
 
@@ -163,15 +166,15 @@ header .img-container img{
 
 #container .banner-container .description {
     text-align: center;
-    margin: 15px 0;
-    font-size: 16px;
+    margin: 1rem 0;
+    font-size: 1rem;
 	position: absolute;
-	bottom:10px;
+	bottom:0.625rem;
 	left:0;
 	right:0;
 	color:#fff;
 	font-weight:550;
-	text-shadow: 1px 1px 2px #180303;
+	text-shadow: 0.06rem 0.06rem 0.12rem #180303;
 }
 #container .banner-container .carousel-images img.active {
     display: block; /* Show the active image */
@@ -184,16 +187,16 @@ header .img-container img{
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
     cursor: pointer;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1.125rem;
+    padding: 0.625rem;
 }
 
 #container .banner-container .prev {
-    left: 10px;
+    left: 0.625rem;
 }
 
 #container .banner-container .next {
-    right: 10px;
+    right: 0.625rem;
 }
 /* Font color */
 #container .banner-container .title, #container .banner-container .sub-title{
@@ -201,21 +204,21 @@ header .img-container img{
 }
 /* Styleing title */
 #container .banner-container .title{
-	letter-spacing:3px;
-	font-size:42px;
-	padding: 20px;
+	letter-spacing:0.19rem;
+	font-size: 2.625rem;
+	padding: 1.25rem;
 }
 /* Styleing sub-title */
 #container .banner-container .sub-title{
 	/* 20 px to the banner container */
 	position:absolute;
-	bottom:20px;
-	right:20px;
+	bottom:1.25rem;
+	right:1.25rem;
 	/* italic font */
 	font-style: italic;
 	/* Space between letters */
-	letter-spacing:1px;
-	font-size:14px;
+	letter-spacing:0.06rem;
+	font-size:0.875rem;
 	font-weight:550;
 }
 
@@ -226,20 +229,20 @@ header .img-container img{
 	justify-content: center;
 	/* ul have a Gradient backgroung color. */
 	background-image: linear-gradient(to bottom, #3e32da, #202e7a);
-	/* padding: 10px 0; */
+	/* padding: 0.625rem 0; */
 }
 #nav-container li{
 	/* Remove dot before li */
 	list-style: none;
 	/* When hover, give a hand */
 	cursor: pointer;
-	/* left/right distance from border to content is 10px */
-	padding:0px 10px;
+	/* left/right distance from border to content is 0.625rem */
+	padding:0 0.625rem;
 	/* top/bottom distance from border to ul container */
-	margin: 5px 0;
+	margin: 0.3rem 0;
 }
 #nav-container li a{
-	font-size:14px;
+	font-size:0.875rem;
 	font-weight:550;
 	/* Remove the underscore */
 	text-decoration: none;
@@ -248,134 +251,87 @@ header .img-container img{
 }
 #nav-container li:not(:last-child){
 	/* Give li a border-right, without the last li. */
-	border-right:1px solid #4f0213;
+	border-right:0.06rem solid #4f0213;
 }
 #nav-container li:hover, #nav-container li a:focus{
 	/* When put cursor on the li, it wull change it's background color, and the action will completed in 1s */
 	background-color: rgb(0,0,0,.3);
 	transition: 1s;
 }
-
-/* main content start */
-.content-container{
-	/* Make content-container a flex box, aside nav 1, and right content 3 */
-	/* display: flex; */
-}
-.content-left{
-	/* flex:1; */
-}
-.content-left ul{
-	/* distance from the bottom element */
-	margin-bottom:50px;
-}
-.content-left .aside-bottom{
-	color:#666;
-	font-size:12px;
-}
-.content-left .aside-bottom img{
-	/* place img to the right of text */
-	float: right;
-	width:100px;
-}
-.content-left ul li{
-	/* Dot inside*/
-	list-style-position: inside;
-	padding:5px;
-	/* gradient background */
-	background-image: linear-gradient(to bottom, #ffffff,#dad6e1, #aaacae);
-}
-.content-left ul li a{
-	font-size:12px;
-	font-weight:550;
-	color: #000;
-}
-/* Give li a hover and focus style */
-.content-left ul li:hover, .content-left ul li:hover a, .content-left ul li a:focus,.active{
-	color:#fff;
-	background:rgb(0,0,0,.3);
-}
-/* First li have no dot before it*/
-.content-left ul li:first-child{
-	list-style: none;
-}
-/* When li is clicked, give it a class active, remove the dot before it. */
-.content-left ul li.active::before{
-	content:'';
-}
 /*  */
 .content-right{
 	/* distance from content-left */
-	padding-left:20px;
+	padding:0.5rem;
 	/* flex:3 */
 }
 .content-right .content-nav{
 	/* content nav top/right/bottom/left distace */
-	margin:10px 0 20px 0;
-	font-size:12px;
+	margin:0.625rem 0 1.25rem 0;
+	font-size:0.75rem;
 }
 .content-right .content-nav .connect-sign{
-	letter-spacing: -4px;
-	margin-right:10px;
+	letter-spacing: -0.25rem;
+	margin-right:0.625rem;
 }
 .content-right .content-subtitle{
-	/*  top/bottom 15px */
-	margin:15px 0;
+	/*  top/bottom 1rem */
+	margin:1rem 0;
 }
 .content-right .article{
-	font-size:14px;
+	font-size:0.875rem;
 	/* Give it more distance from top/bottom line */
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 .content-right .article a{
 	font-weight: 550;
 }
 .content-right .article .article-top{
-	/* 15px from bottom element */
-	margin-bottom:15px;
-	font-size:18px;
+	/* 1rem from bottom element */
+	margin-bottom:1rem;
+	font-size:1.125rem;
 }
 .content-right .article .article-top p{
-	/* 15px from bottom element */
-	margin-bottom:15px;
+	/* 1rem from bottom element */
+	margin-bottom:1rem;
 }
 .content-right .article .article-top ul{
-	/* 15px from bottom element */
+	/* 1rem from bottom element */
 	list-style-type: none;
 }
 .content-right .article .article-top .safty-tips{
-	/* 15px from bottom element */
-	margin-bottom:15px;
-	font-size:24px;
+	/* 1rem from bottom element */
+	margin-bottom:1rem;
+	font-size:1.5rem;
 	color:rgb(0,102,153)
 }
 .content-right .article-bottom{
 	/* Make a flex box for texts and image container */
 	display:flex;
-	font-size:16px;
+	font-size:1rem;
 	align-items: center;
 
 }
 .content-right .article-bottom-left{
 	flex:7;
-	padding-top:10px;
+	padding-top:0.625rem;
 }
 .content-right .article-bottom-left a{
 	/* strech the imag to fit the box */
-	font-size:20px;
+	font-size:1.25rem;
 }
 .content-right .article-bottom-right{
 	flex:6;
-	border:1px solid #ccc;
-	padding:5px;
+	border:0.06rem solid #ccc;
+	padding:0.3rem;
 }
 .content-right .article-bottom-right img{
 	/* strech the imag to fit the box */
 	width:100%;
 }
 .content-right  .article-bottom-right .img-descrition{
-	font-size:16px;
+	font-size:1rem;
 	color:#000;
-	line-height:16px;
+	line-height:1rem;
 }
 .content-right .article-bottom-left{
 	/* Make a flex box for texts and ul */
@@ -383,31 +339,34 @@ header .img-container img{
 	flex-direction: column;
 }
 .content-right .article-bottom-left ul{
-	margin:15px;
+	margin:1rem;
 }
 .content-right .article-bottom-left ul li{
 	/* Remove the dot before */
 	list-style: none;
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 }
 .content-right .article-bottom-left ul li a{
 	font-weight: 550;
 }
+.content-right .gallery {
+	text-align: center;
+}
 .content-right .gallery img{
-	width:200px;
-	height:200px;
-	margin:10px;
+	width:12.5rem;
+	height:12.5rem;
+	margin:0.625rem;
 }
 /* footer style begin */
 footer{
 	/* element place in center of footer */
 	text-align: center;
-	font-size:12px;
-	/* 20px away from the content */
-	margin-top:20px;
+	font-size:0.75rem;
+	/* 1.25rem away from the content */
+	margin-top:1.25rem;
 }
 footer .copyright{
-	margin-right:10px;
+	margin-right:0.625rem;
 	color:#666
 }
 footer .address{
@@ -419,13 +378,14 @@ button[type="submit"]{
 }
 /* Contact Us Form */
 fieldset#contactInfo {
-	border-radius: 10px;
-	margin: 15px auto;
-	box-shadow: 2px 2px 4px #ccc, -2px -2px 4px #ccc;
+	border-radius: 0.625rem;
+	margin: 1rem auto;
+	box-shadow: 0.12rem 0.12rem 0.25rem #ccc, -0.12rem -0.12rem 0.25rem #ccc;
 }
 
 .center {
 	text-align: center;
+	margin-top:10px;
 }
 
 #contactInfo .left {
@@ -434,46 +394,38 @@ fieldset#contactInfo {
 }
 #contactInfo ul {
 	list-style-type: none;
-    padding: 0;
+    padding: .2rem;
     margin: 0;
 }
 #contactInfo h3 {
-	margin-left: 20px;
-	margin-top: 20px;
+	margin-left: 1.25rem;
+	margin-top: 1.25rem;
 }
 
 #contactInfo .left ul li {
 	width: 90%;
 	/*background: #EEE;*/
-	/*border:1px solid black;*/
-	border-radius: 5px;
-	padding: 8px 10px;
+	/*border:0.06rem solid black;*/
+	border-radius: 0.3rem;
+	padding: 0.5rem 0.625rem;
 	box-sizing: border-box;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 #contactInfo .left label {
 	display: inline-block;
-	width: 100px;
-	margin-top: 2px;
+	width: 5.5rem;
+	margin-top: 0.12rem;
 }
 
-#contactInfo .left input {
+#contactInfo .left input, #contactInfo .left select {
 	display: inline-block;
 	width: 50%;
-	height: 26px;
-	padding-left: 5px;
-	font-size: 14px;
-	color: #333;
-}
-
-#contactInfo .left select {
-	display: inline-block;
-	height: 30px;
-	padding-left: 5px;
-	font-size: 14px;
-	line-height: 26px;
-	padding-top: 3px;
+	height: 1.5rem;
+	padding-left: 0.3rem;
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+	padding-top: 0.19rem;
 	color: #333;
 }
 
@@ -482,7 +434,7 @@ fieldset#contactInfo {
 }
 
 .contactError {
-	margin-left: 110px;
+	margin-left: 6.875rem;
 	color: #D8000C; /* 确保文本颜色足够深 */
     background-color: #ffffff; /* 确保背景颜色足够浅 */
 }
@@ -490,19 +442,19 @@ fieldset#contactInfo {
 
 #submit,
 #clear {
-	height: 36px;
+	height: 2.25rem;
 	color: #333;
-	margin-top: 8px;
-	font-size: 16px;
+	margin-top: 0.5rem;
+	font-size: 1rem;
 }
 
 #submit {
-	margin-right: 15px;
+	margin-right: 1rem;
 }
 
 #submit:hover,
 #clear:hover {
-	/*box-shadow: 2px 2px 2px #000;*/
+	/*box-shadow: 0.12rem 0.12rem 0.12rem #000;*/
 	cursor: pointer;
 }
 
@@ -519,8 +471,12 @@ fieldset#contactInfo {
 	text-align: center;
 }
 .instructor-container .instructor img{
-	height:300px
+	height:18.75rem
 }
+.instructor-container .instructor1 img{
+	height:8rem
+}
+
 .home-container{
 	text-align: center;
 	display: flex;
@@ -528,16 +484,19 @@ fieldset#contactInfo {
 	justify-content: center;
 	align-items: center;
 }
-@media screen and (max-width: 715px) {
+@media all and (max-width:715px) {
+	html{
+		font-size:14px;
+	}
 #header .big-logo{
-	/* width:100px; */
+	/* width:6.25rem; */
 	display:none;
 }
 #nav-container{
 	display:none;
 }
 #header .small-logo{
-	/* width:100px; */
+	/* width:6.25rem; */
 	display:block;
 }
 .menu-container{
@@ -547,6 +506,6 @@ fieldset#contactInfo {
 	flex-direction: column;
 }
 .instructor-container .instructor img{
-	height:200px
+	height:12.5rem
 }
 }
