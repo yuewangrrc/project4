@@ -38,3 +38,21 @@ function autoplay() {
 // Initialize the carousel
 showSlide(currentSlide);
 autoplay();
+
+
+var snowflakes = new Snowflakes({
+    color: '#fff', // Default: "#5ECDEF"
+    // container: document.querySelector('#container'), // Default: document.body
+    count: 100, // 100 snowflakes. Default: 50
+    minOpacity: 0.1, // From 0 to 1. Default: 0.6
+    maxOpacity: 0.95, // From 0 to 1. Default: 1
+    minSize: 20, // Default: 10
+    maxSize: 50, // Default: 25
+    rotation: true, // Default: true
+    speed: .5, // The property affects the speed of falling. Default: 1
+    wind: false, // Without wind. Default: true
+    width: 500, // Default: width of container
+    height: 250, // Default: height of container
+    zIndex: 100, // Default: 9999,
+    autoResize: true // Default: true
+});

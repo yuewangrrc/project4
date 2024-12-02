@@ -64,8 +64,8 @@ header .img-container{
 	flex:1;
 	/* Illiminate the white space between image and banner */
 	margin-bottom: -0.25rem;
-	/* width:6.25rem; */
-	height:6.25rem;
+	/* width:5rem; */
+	height:5rem;
 }
 .small-logo{
 	display: none;
@@ -77,8 +77,8 @@ header .img-container{
 }
 header .img-container img{
 	/* width:200% */
-	/* width:6.25rem; */
-	height:6.25rem
+	/* width:5rem; */
+	height:5rem
 
 }
 #small-logo{
@@ -489,14 +489,14 @@ fieldset#contactInfo {
 		font-size:14px;
 	}
 #header .big-logo{
-	/* width:6.25rem; */
+	/* width:5rem; */
 	display:none;
 }
 #nav-container{
 	display:none;
 }
 #header .small-logo{
-	/* width:6.25rem; */
+	/* width:5rem; */
 	display:block;
 }
 .menu-container{
