@@ -495,6 +495,13 @@ fieldset#contactInfo {
 	align-items: center;
 	margin-bottom:1rem;
 }
+/* 设置 hr 的颜色和样式 */
+hr {
+    border: none; /* 移除默认边框 */
+    height: 1px; /* 设置 hr 的高度 */
+    background-color: #dddada; /* 设置 hr 的背景颜色 */
+    margin: 1rem 0; /* 设置 hr 的上下外边距 */
+}
 @media all and (max-width:715px) {
 	html{
 		font-size:14px;
