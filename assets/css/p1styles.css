@@ -24,7 +24,7 @@ a{
 }
 a:hover, a:focus{
 	text-decoration: none;
-	color: rgb(33, 0, 153);
+	color: rgb(7 27 141);
 }
 html{
 	font-size:16px;
@@ -33,7 +33,7 @@ body,html {
 	width: 100%;
 	position:relative;
 	background-color: #ffffff;
-	font-family: interstate, HelveticaNeue, HelveticaNeue neue, Helvetica, Arial, sans-serif;
+	font-family: "Sour Gummy", interstate, HelveticaNeue, HelveticaNeue neue, Helvetica, Arial, sans-serif;
 }
 
 div#container {
@@ -92,7 +92,7 @@ header .img-container img{
 
 /* Dropdown button */
 .dropbtn {
-    background-color: #f9f9f9;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0.625rem;
@@ -121,7 +121,8 @@ header .img-container img{
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #0b82ea;
+	color:#fff;
 }
 
 /* Show the dropdown menu on hover */
@@ -228,7 +229,7 @@ header .img-container img{
 	display: flex;
 	justify-content: center;
 	/* ul have a Gradient backgroung color. */
-	background-image: linear-gradient(to bottom, #3e32da, #202e7a);
+    background-image: linear-gradient(to bottom, #2a1af0, #5267de);
 	/* padding: 0.625rem 0; */
 }
 #nav-container li{
@@ -237,12 +238,10 @@ header .img-container img{
 	/* When hover, give a hand */
 	cursor: pointer;
 	/* left/right distance from border to content is 0.625rem */
-	padding:0 0.625rem;
-	/* top/bottom distance from border to ul container */
-	margin: 0.3rem 0;
+	padding:0.3rem 0.625rem;
 }
 #nav-container li a{
-	font-size:0.875rem;
+	font-size:1rem;
 	font-weight:550;
 	/* Remove the underscore */
 	text-decoration: none;
@@ -255,8 +254,17 @@ header .img-container img{
 }
 #nav-container li:hover, #nav-container li a:focus{
 	/* When put cursor on the li, it wull change it's background color, and the action will completed in 1s */
-	background-color: rgb(0,0,0,.3);
+	background-color: rgba(0,0,0,.3);
 	transition: 1s;
+}
+.active{
+	/* background-color: #f1f1f1; */
+	background-color: rgb(7 27 141);
+	font-size:1.125rem;
+	transition: 1s;
+}
+.active a{
+	font-size:1.125rem
 }
 /*  */
 .content-right{
@@ -267,7 +275,7 @@ header .img-container img{
 .content-right .content-nav{
 	/* content nav top/right/bottom/left distace */
 	margin:0.625rem 0 1.25rem 0;
-	font-size:0.75rem;
+	font-size:0.875rem;
 }
 .content-right .content-nav .connect-sign{
 	letter-spacing: -0.25rem;
@@ -476,13 +484,16 @@ fieldset#contactInfo {
 .instructor-container .instructor1 img{
 	height:8rem
 }
-
+#description{
+	width:50%;
+}
 .home-container{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom:1rem;
 }
 @media all and (max-width:715px) {
 	html{
